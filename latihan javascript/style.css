@@ -1,0 +1,286 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
+
+body {
+font-family: Arial, sans-serif;
+background-color: #f4fdfd;
+color: #333;
+line-height: 1.6;
+transition: 0.3s;
+}
+
+/* HEADER */
+#judul {
+background-color: turquoise;
+text-align: center;
+padding: 20px;
+}
+
+#judul h1 {
+font-size: 30px;
+margin-bottom: 15px;
+}
+
+/* NAVIGASI */
+#navigasi {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+}
+
+#navigasi a {
+text-decoration: none;
+color: black;
+background-color: white;
+padding: 8px 15px;
+border-radius: 8px;
+font-weight: bold;
+}
+
+#navigasi a:hover {
+background-color: #333;
+color: white;
+}
+
+/* TOMBOL */
+button {
+border: none;
+cursor: pointer;
+border-radius: 8px;
+padding: 9px 14px;
+font-weight: bold;
+}
+
+#tombol-gelap {
+background-color: #333;
+color: white;
+}
+
+#tombol-gelap:hover {
+background-color: black;
+}
+#tombol-gelap { padding: 10px 20px; border: none; border-radius: 8px; background-color: black; color: white; cursor: pointer; font-size: 16px; } /* Saat mode gelap aktif */ body.gelap { background-color: #222; color: white; } /* Tombol saat mode gelap */ body.gelap #tombol-gelap { background-color: white; color: black; }
+
+/* MAIN */
+main {
+max-width: 1100px;
+margin: 30px auto;
+padding: 0 20px;
+}
+
+#jenis h2,
+#Tentang h2,
+aside h2 {
+margin-bottom: 15px;
+color: #008b8b;
+}
+
+/* SEARCH */
+#cari {
+width: 100%;
+padding: 12px;
+margin-bottom: 20px;
+border: 2px solid turquoise;
+border-radius: 8px;
+font-size: 16px;
+}
+
+/* ARTICLE */
+article {
+background-color: white;
+margin-bottom: 25px;
+padding: 20px;
+border-radius: 12px;
+box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+article h3 {
+color: #008b8b;
+margin-bottom: 10px;
+}
+
+figure {
+margin-bottom: 15px;
+}
+
+figure img {
+width: 400px;
+max-width: 100%;
+height: auto;
+border-radius: 10px;
+display: block;
+}
+
+figcaption {
+font-size: 14px;
+color: #666;
+margin-top: 5px;
+}
+
+/* AKSI */
+.aksi {
+display: flex;
+align-items: center;
+gap: 10px;
+flex-wrap: wrap;
+margin-top: 15px;
+}
+
+.btn-suka {
+background-color: #ff6b6b;
+color: white;
+}
+
+.btn-suka:hover {
+background-color: #e05555;
+}
+
+.btn-baca {
+background-color: turquoise;
+color: black;
+}
+
+.btn-baca:hover {
+background-color: #20c9c9;
+}
+
+/* TEKS TAMBAHAN */
+.sembunyi {
+display: none;
+}
+
+.selengkapnya {
+margin-top: 10px;
+}
+
+/* SIDEBAR */
+aside {
+background-color: white;
+padding: 20px;
+margin: 25px 0;
+border-radius: 12px;
+box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+aside ul {
+padding-left: 20px;
+}
+
+aside a {
+color: #008b8b;
+text-decoration: none;
+}
+
+aside a:hover {
+text-decoration: underline;
+}
+
+/* TENTANG */
+#Tentang {
+background-color: white;
+padding: 25px;
+border-radius: 12px;
+margin-bottom: 25px;
+box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper {
+margin-bottom: 15px;
+}
+
+/* FOOTER */
+#kontak {
+background-color: turquoise;
+text-align: center;
+padding: 25px;
+margin-top: 30px;
+}
+
+#kontak h2 {
+margin-bottom: 10px;
+}
+
+.alamat {
+font-style: normal;
+margin-bottom: 15px;
+}
+
+.alamat a {
+color: black;
+}
+
+/* MODE GELAP */
+body.mode-gelap {
+background-color: #181818;
+color: #eee;
+}
+
+body.mode-gelap #judul,
+body.mode-gelap #kontak {
+background-color: #222;
+color: white;
+}
+
+body.mode-gelap article,
+body.mode-gelap aside,
+body.mode-gelap #Tentang {
+background-color: #292929;
+color: #eee;
+}
+
+body.mode-gelap article h3,
+body.mode-gelap #jenis h2,
+body.mode-gelap #Tentang h2,
+body.mode-gelap aside h2 {
+color: turquoise;
+}
+
+body.mode-gelap figcaption {
+color: #bbb;
+}
+
+body.mode-gelap #cari {
+background-color: #333;
+color: white;
+border-color: turquoise;
+}
+
+body.mode-gelap #navigasi a {
+background-color: #444;
+color: white;
+}
+
+body.mode-gelap #navigasi a:hover {
+background-color: turquoise;
+color: black;
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 600px) {
+#judul h1 {
+font-size: 24px;
+}
+
+
+main {
+    padding: 0 12px;
+}
+
+article {
+    padding: 15px;
+}
+
+.aksi {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#navigasi {
+    gap: 8px;
+}
+}
